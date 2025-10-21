@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is a url shortner",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasss333/URL_shortner.git"
+  },
+  "author": "Yash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasss333/URL_shortner/issues"
+  },
+  "homepage": "https://github.com/Yasss333/URL_shortner#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2",
+    "nodemon": "^3.1.10"
+  }
+}
