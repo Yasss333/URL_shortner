@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+     <style>
+    body {
+      background-color: #b66d6d;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      background: #fff;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .short-link {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+<H1>Sign-Up Page</H1>
+<form action="/user" method="post" >
+    <label >Full Name </label><br>
+    <input type="text" required name="name">  
+    <label >Email</label>
+    <input type="text" name="email" required>
+    <label for="">Password</label>
+    <input type="password" required name="password" id="">
+    <br>
+    <button type="submit">Sign-Up</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+
+    <style>
+      body {
+        background-color: #b66d6d;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+      }
+
+      input, button {
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .short-link {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+
+    <!-- Form -->
+    <form method="POST" action="/url">
+      <label>Enter Original URL:</label>
+      <br />
+      <input type="text" name="url" placeholder="https://example.com" required />
+      <button type="submit">Generate</button>
+    </form>
+
+    <% if (newURL) { %>
+      <h2>New Short URL:</h2>
+      <p>
+        <a class="short-link" href="/<%= newURL.shortID %>">
+          http://localhost:3000/<%= newURL.shortID %>
+        </a>
+      </p>
+    <% } %>
+
+  </body>
+  </html>
